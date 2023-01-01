@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    <title>Form-Validate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center" id="header">Form-Validate</h4>
+        </div>
+
+        <form class="row g-3 needs-validation mt-4" novalidate>
+
+            <div class="row">
+                <div class="col-6">
+                    <label for="validationCustom01" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="validationCustom01" placeholder="Your E-mail..."
+                        required>
+                    <div class="valid-feedback">
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your E-mail
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Your Name..." required>
+                    <div class="valid-feedback">
+
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your Name
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <label for="validationCustom04" class="form-label">Gender</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose Your Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select your Gender
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <label for="validationCustom04" class="form-label">Your Language</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose Your Language</option>
+                        <option>English</option>
+                        <option>Persian</option>
+
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a Language
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree your Rules
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#">please read Rules</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <label for="validationCustom03" class="form-label">comment</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Leave a Commnet" required>
+                    <div class="invalid-feedback">
+                        please send me your comment
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <button class="btn btn-outline-dark" id="btn" type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+    <script src="./formValid.js"></script>
+</body>
+
+</html>
